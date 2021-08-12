@@ -27,6 +27,7 @@ public class ServiceImpl implements ServiceInterface {
 
 		try {
 			Employee employeeObj = dao.save(emp);
+			System.out.println("Employee object added into database");
 			return employeeObj;
 
 		} catch (DataAccessException e) {
