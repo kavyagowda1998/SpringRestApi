@@ -82,6 +82,7 @@ public class EmployeeController {
 	public ResponseEntity<Employee> getEmp(@PathVariable int id) throws DatabaseException {
 
 		Employee obj = service.getEmp(id);
+		System.out.println("Employee Object = :"+obj+"Changing in employee controller in locally");
 
 		if (obj != null) {
 
