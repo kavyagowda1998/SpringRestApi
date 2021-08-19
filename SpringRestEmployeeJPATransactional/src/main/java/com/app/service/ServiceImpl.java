@@ -24,7 +24,7 @@ public class ServiceImpl implements ServiceInterface {
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public Employee addEmployee(Employee emp) throws DatabaseException {
-		System.out.println("Revert");
+
 		try {
 			Employee employeeObj = dao.save(emp);
 			System.out.println("Employee object added into database");
