@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyErrorController implements ErrorController  {
 	
-	System.out.println("Changes in ErrorController to show revert");
+	
 	@RequestMapping(value = "/error",method=RequestMethod.GET)
     public String handleError(HttpServletRequest request) {
-        System.out.println("Chnages done in myErrorController to show Restore");
+        
         Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
 
         if (status != null) {
